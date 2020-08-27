@@ -261,6 +261,30 @@ input[type=text], input[type=email], input[type=number] {
     
   }
 
+  .reservation-response {
+    display: block;
+    padding: 1px;
+    height: 50px;
+    margin-right: 20%;
+    margin-top: 3%;
+    
+  }
+
+  .reservation-response-failure {
+    background-color: rgb(238, 39, 32);
+    font-size: 2em;
+    padding: 2%;
+    width: 100%;
+  }
+
+
+  .reservation-response-success {
+    background-color: rgb(65, 233, 23);
+    font-size: 2em;
+    padding: 2%;
+    width: 40%;
+  }
+
   .h2-dark {
       color: black;
   }
