@@ -210,6 +210,12 @@ console.log(navigator.language);
 
 function setLanguage(languageChosen) {
 
+  if (languageChosen == 'sk') {
+    document.getElementById("submit-button").value = "Odoslať";
+  } else {
+    document.getElementById("submit-button").value = "Send";
+  }
+
   language = languages[languageChosen];
   for (const element of document.querySelectorAll('[data-language-key]')) {
     const translationKey = element.getAttribute('data-language-key');
