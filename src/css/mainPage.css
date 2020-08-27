@@ -29,10 +29,28 @@ p {
     
     top: 0;
     width: 100%;
-    padding-left: 16%;
+    padding-left: 12%;
     padding-right: 1%;
     z-index: 10;
     margin: 0;
+}
+
+.languages-container {
+  display: inline-block;
+}
+
+.language-icon-button {
+  display: block;
+  width: 70px;
+  height: 45px;
+  border: none;
+  margin-bottom: 10px;
+  
+}
+
+.language-icon {
+  width: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dropdown-menu {
@@ -491,15 +509,41 @@ input[type=text], input[type=email], input[type=number] {
     margin: 0 0 0 0;
   }
 
+  .languages-container {
+    margin-left: 3%;
+    margin-top: 3%;
+    vertical-align: top;
+  }
+
+  .language-icon-button {
+  display: block;
+  width: 60px;
+  height: 40px;
+  border: none;
+  margin-bottom: 5px;
+  
+  }
+
+  .language-icon {
+    width: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .logo {
+    margin: 0 0 0 45%;
+    height: 120px;
+    width: 120px;
+  }
+
   .dropdown-menu {
     display: inline-block;
     position: relative;
-    margin: 0 0 0 40%;
+    margin: 0 0 0 25%;
     padding: 0;
     top: 0;
   }
 
-  nav div a,  {
+  nav div a  {
     display: inline-block;
   }
 
@@ -516,12 +560,7 @@ input[type=text], input[type=email], input[type=number] {
   }
 
   
-  .logo {
-    margin: 0 0 0 5%;
-    height: 120px;
-    width: 120px;
-  }
-
+  
   .h1-welcome {
     padding-left: 5%;
     margin-left: 0;

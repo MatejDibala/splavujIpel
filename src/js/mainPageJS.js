@@ -119,7 +119,7 @@ languages = {
     kontakty_2: 'Kontakty.',
     pozicovna_sportoveho_naradia: 'Požičovňa športového náradia',
     uspesna_rezervacia: 'Ďakujeme za rezerváciu!',
-    first_reason: 'Meno a priezvisko má menej ako 7 alebo viac ako 70 znakov',
+    first_reason: 'Meno a priezvisko má menej ako 7 alebo viac ako 70 znakov.',
     second_reason: 'Je potrebné rezervovať si aspoň jedno kanoe alebo paddleboard.',
     third_reason: 'Nesprávny formát e-mailovej adresy.',
     fourth_reason: 'Vložte platné telefónne číslo (mobilné)'
@@ -178,20 +178,43 @@ languages = {
     expresna_rezervacia: 'For express reservation or if you have any questions, please use ',
     kontakty_2: 'Contacts.',
     pozicovna_sportoveho_naradia: 'Sport equipment rental',
-    uspesna_rezervacia: '',
-    first_reason: '',
-    second_reason: '',
-    third_reason: '',
-    fourth_reason: ''
+    uspesna_rezervacia: 'Thank you for reservation!',
+    first_reason: 'Your name contains fewer than 7 or more than 70 characters.',
+    second_reason: 'It\'s necessary to rent at least one kanoe or paddleboard.',
+    third_reason: 'Wrong e-mail address format.',
+    fourth_reason: 'Insert valid phone number (cell phone)'
   }
 };
 
-let language = languages['sk']; // tady podle toho co si vybere v tom prepinaci
+let language = '';
 
-for (const element of document.querySelectorAll('[data-language-key]')) {
-  const translationKey = element.getAttribute('data-language-key');
-  element.textContent = language[translationKey];
+if (/^sk\b/.test(navigator.language)) {       
+  language= 'sk'; 
+} else if (/^cs\b/.test(navigator.language)) {       
+  language= 'sk'; 
+} else if (/^hu\b/.test(navigator.language)) {       
+  language= 'en'; 
+} else if (/^de\b/.test(navigator.language)) {       
+  language= 'en'; 
+} else  {       
+  language= 'en'; 
 }
+ // tady podle toho co si vybere v tom prepinaci
+
+console.log(navigator.language);
+
+function setLanguage(languageChosen) {
+
+  language = languages[languageChosen];
+  for (const element of document.querySelectorAll('[data-language-key]')) {
+    const translationKey = element.getAttribute('data-language-key');
+    element.textContent = language[translationKey];
+  }
+}
+
+setLanguage(language);
+
+
 
 function onFormSubmit(){
 
