@@ -190,14 +190,19 @@ let language = '';
 
 if (/^sk\b/.test(navigator.language)) {       
   language= 'sk'; 
+  document.getElementById("submit-button").value = "Odoslať";
 } else if (/^cs\b/.test(navigator.language)) {       
   language= 'sk'; 
+  document.getElementById("submit-button").value = "Odoslať";
 } else if (/^hu\b/.test(navigator.language)) {       
   language= 'en'; 
+  document.getElementById("submit-button").value = "Send";
 } else if (/^de\b/.test(navigator.language)) {       
   language= 'en'; 
+  document.getElementById("submit-button").value = "Send";
 } else  {       
   language= 'en'; 
+  document.getElementById("submit-button").value = "Send";
 }
  // tady podle toho co si vybere v tom prepinaci
 
