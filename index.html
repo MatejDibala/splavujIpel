@@ -25,6 +25,15 @@
 	<div id="top-of-the-page" ></div>
 	<nav>
 		<div class="nav-bar">
+			<div class="languages-container">
+				<button class="language-icon-button" onclick='setLanguage("sk")'>
+					<img class="language-icon" src="src/img/sk_flag.png">
+				</button>
+				<button class="language-icon-button" onclick='setLanguage("en")'>
+					<img class="language-icon" src="src/img/en_flag.png">
+				</button>
+			</div>
+			
 			<a href="#top-of-the-page" >
 				<img class="logo centered" src="src/img/logo_splavuj_ipel.png"  >
 			</a>
@@ -45,6 +54,9 @@
 						</li>
 						<li class="navigation-item">
 							<a class="nav-link" href="#reservation-form" onclick="showUlDropdown()" data-language-key="rezervacia"></a>
+						</li>
+						<li class="navigation-item">
+							<a class="nav-link" href="#information" onclick="showUlDropdown()" data-language-key="information_button"></a>
 						</li>
 						<li class="navigation-item">
 							<a class="nav-link" href="#contacts" onclick="showUlDropdown()" data-language-key="kontakty"></a>
@@ -158,16 +170,29 @@
 		<div class="dark-theme-section div-section main-section" >
 			<div>
 				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="cennik_nadpis"></h1></div>
-				<h2 class="h2-light" data-language-key="zakladny_cennik"></h2>
-				<h2 class="h2-light" data-language-key="cennik_kanoe"></h2>
+				<!--<h2 class="h2-light" data-language-key="zakladny_cennik"></h2>-->
+				<h2 class="h2-light" data-language-key="splav_vikend"></h2>
+				<h2 class="h2-light" data-language-key="splav_tyzden"></h2>
+				<h2 class="h2-light" data-language-key="splav_deti"></h2>
+				<h2 class="h2-light" data-language-key="splav_kanoe"></h2>
 				<h2 class="h2-light" data-language-key="cennik_paddleboard"></h2>
-				<div class="small-padding" style="display: inline-block;">
+				<!--<div class="small-padding" style="display: inline-block;">
 					<a target="_blank" href="/src/files/uplny_cennik.pdf">
 						<h2 class="dark-theme-section dark-to-light inline-h2" data-language-key="uplny_cennik_download"></h2>
 						<img class="white-icon " src="/src/img/icon_download.svg">
 					</a>
 				</div>
-				<br>
+				-->
+				<h2 class="h2-light" data-language-key="poznamka_k_cenniku"></h2>
+				<ul>
+					<li data-language-key="poznamka_k_cenniku_1"></li>
+					<li data-language-key="poznamka_k_cenniku_2"></li>
+					<li data-language-key="poznamka_k_cenniku_3"></li>
+					<li data-language-key="poznamka_k_cenniku_4"></li>
+					<li data-language-key="poznamka_k_cenniku_5"></li>
+					<li data-language-key="poznamka_k_cenniku_6"></li>
+					<li data-language-key="poznamka_k_cenniku_7"></li>
+				</ul>
 				
 				<div class="small-padding" style="display: inline-block;">
 					<a target="_blank" href="/src/files/cennik_obstaravania.pdf">
@@ -313,8 +338,12 @@
 				</div>
 				<input type="number" id="telefonne-cislo" name="telefonne-cislo" required><br>
 				<br>
-			    <input type="submit" value="Odoslať">
+			    <input type="submit" value="Send" id="submit-button">
 			</form>
+			<div id="form-response-message">
+				
+			</div>
+			<div id="information"></div>
 			<br>
 			<br>
 			<br>
@@ -325,8 +354,66 @@
 		</div>
 	</section>
 	<section>
-		<div id="contacts"></div>
+		<div ></div>
 		<div class="dark-theme-section div-section section-2" >
+			<div>
+				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="informacie_faq"></h1></div>
+				<h2 class="h2-light" data-language-key="priprava_nadpis"></h2>
+				<ol>
+					<li data-language-key="priprava_text_1"></li>
+					<li data-language-key="priprava_text_2"></li>
+					<li data-language-key="priprava_text_3"></li>
+					<li data-language-key="priprava_text_4"></li>
+					<li data-language-key="priprava_text_5"></li>
+					<li data-language-key="priprava_text_6"></li>
+				</ol>
+				<h2 class="h2-light" data-language-key="bezpecnost_nadpis"></h2>
+				<ol>
+					<li data-language-key="bezpecnost_text_1"></li>
+					<li data-language-key="bezpecnost_text_2"></li>
+					<li data-language-key="bezpecnost_text_3"></li>
+					<li data-language-key="bezpecnost_text_4"></li>
+					<li data-language-key="bezpecnost_text_5"></li>
+				</ol>
+				<h2 class="h2-light" data-language-key="faq"></h2>
+				<h3 data-language-key="question_1"></h3>
+				<div data-language-key="answer_1"></div>
+				<h3 class="bold" data-language-key="question_2"></h3>
+				<div data-language-key="answer_2"></div>
+				<h3 class="bold" data-language-key="question_3"></h3>
+				<div data-language-key="answer_3"></div>
+				<h3 class="bold" data-language-key="question_4"></h3>
+				<div data-language-key="answer_4"></div>
+				<h3 class="bold" data-language-key="question_5"></h3>
+				<div data-language-key="answer_5"></div>
+				<h3 class="bold" data-language-key="question_6"></h3>
+				<div data-language-key="answer_6"></div>
+				<h3 class="bold" data-language-key="question_7"></h3>
+				<div data-language-key="answer_7"></div>
+				<h3 class="bold" data-language-key="question_8"></h3>
+				<div data-language-key="answer_8"></div>
+				<h3 class="bold" data-language-key="question_9"></h3>
+				<div data-language-key="answer_9"></div>
+				<h3 class="bold" data-language-key="question_10"></h3>
+				<div data-language-key="answer_10"></div>
+				<h3 class="bold" data-language-key="question_11"></h3>
+				<div data-language-key="answer_11"></div>
+				<h3 class="bold" data-language-key="question_12"></h3>
+				<div data-language-key="answer_12"></div>
+				<h3 class="bold" data-language-key="question_13"></h3>
+				<div data-language-key="answer_13"></div>
+				<h3 class="bold" data-language-key="question_14"></h3>
+				<div data-language-key="answer_14"></div>
+				<h3 class="bold" data-language-key="question_15"></h3>
+				<div data-language-key="answer_15"></div>
+				<h3 class="bold" data-language-key="question_16"></h3>
+				<div data-language-key="answer_16"></div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="contacts"></div>
+		<div class="light-theme-section section-2" >
 			<div>
 				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="kontakty"></h1></div>
 				<h2 class="h2-light" data-language-key="pozicovna_sportoveho_naradia"></h2>
