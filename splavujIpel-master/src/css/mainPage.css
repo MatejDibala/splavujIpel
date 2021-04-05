@@ -1,0 +1,634 @@
+html, body { 
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    color: black
+}
+
+.in-one-row {
+  display: inline-block;
+}
+
+a {   
+    text-decoration: none;
+}
+
+p {
+    width: 60%;
+    padding-bottom: 30px;
+}
+
+
+.nav-bar {
+    background-color: white;
+    position: fixed;
+    
+    top: 0;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 1%;
+    z-index: 10;
+    margin: 0;
+}
+
+.languages-container {
+  display: inline-block;
+}
+
+.language-icon-button {
+  display: block;
+  width: 70px;
+  height: 45px;
+  border: none;
+  margin-bottom: 10px;
+  
+}
+
+.language-icon {
+  width: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.centered {
+    /*margin-top: 5px;*/
+    vertical-align: middle;
+}
+
+.navigation-item {
+  display: inline-block;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+nav div ul li {
+    font-size: 1.5em;
+}
+
+.nav-link {
+    display: block;
+    font-size: 1.1em;
+    padding: 15px 15px;
+    color: black;
+    border: rgb(92, 183, 240);
+    border-color: rgb(138, 199, 236);
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 20px;
+    margin: 0px 5px;
+}
+
+.nav-link:hover {
+    background-color: #184b9e;
+    color: white;
+}
+
+.nav-icon {
+  position: relative;
+  top: 15px;
+  
+}
+
+.h1-welcome {
+  padding-left: 30%;
+  font-size: 3.5em;
+  margin-top: 11.5%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+#course-of-action, #section-2, #reservation-form, #section-3, #contacts, #top-of-the-page {
+    display: block;
+    position: relative;
+    top: -200px;
+}
+
+.first-section {
+  margin-top: 1%;
+    z-index: inherit;
+}
+
+.div-section {
+    z-index: inherit;
+}
+
+.dark-theme-section {
+    background-color: #184b9e;
+    color: white;
+    z-index: inherit;
+}
+
+.dark-to-light:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-section {
+    width: 80%;
+    padding: 0 0 0 20%;
+    z-index: inherit;
+    
+}
+
+.column {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+
+.how-to-do-it {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.h1-light {
+    font-size: 3em;
+}
+
+.h1-light-2 {
+    font-size: 3em;
+    color: rgb(48, 204, 27);
+}
+
+.a-go-float {
+    background-color: #184b9e;
+    width: 80%;
+    border-radius: 40%;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.a-go-float:hover {
+background-color: black;
+}
+
+.h1-go-float {
+  margin: 0;
+  padding: 13% 0 0 25.5%;    
+}
+
+/*
+
+*/
+
+#img-logo-big {
+    margin: 0 0 3% 28%;
+    padding-bottom: 12.5%;
+    width: 40%;
+}
+
+.light-theme-section {
+    margin-top: 0;
+    position: relative;
+}
+
+.section-2 {
+    padding-left: 20%;
+    
+    padding-bottom: 2%;
+}
+
+.calendar-section {
+    width: 80%;
+    height: 70vh;
+}
+
+.small-padding {
+    padding: 0;
+    margin: 0;
+}
+
+.h1-dark-theme {
+    font-size: 3em;
+    padding: 0 0 1% 0;
+    margin: 0;
+}
+
+.white-icon {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  color: white;
+  padding-left: 10px;
+}
+
+.inline-h2 {
+  margin: 0;
+  padding: 0 0 10px 0;
+  display: inline-block;
+}
+
+.label {
+    display: inline-block;
+    width: 30%;
+    font-size: 2em;
+    padding: 1% 0;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 20%;
+    padding: 1% 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 1.5em;
+  }
+
+  select {
+    width: 9.5%;
+    padding: 1% 0;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1% 5%;
+    border: none;
+    border-radius: 4px;
+    font-size: 2em;
+    cursor: pointer;
+    float: left;
+  }
+
+  input:hover[type=submit] {
+    background-color: #12ee1a;
+    color: white;
+    
+  }
+
+  .reservation-response {
+    display: block;
+    padding: 1px;
+    height: 50px;
+    margin-right: 20%;
+    margin-top: 3%;
+    
+  }
+
+  .reservation-response-failure {
+    background-color: rgb(238, 39, 32);
+    font-size: 2em;
+    padding: 2%;
+    width: 100%;
+  }
+
+
+  .reservation-response-success {
+    background-color: rgb(65, 233, 23);
+    font-size: 2em;
+    padding: 2%;
+    width: 40%;
+  }
+
+  .h2-dark {
+      color: black;
+  }
+
+  .light-to-dark:hover {
+    background-color: #184b9e;
+    color: white;
+  }
+
+  .like-h2 {
+    margin-top: 1%;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+
+/* Slideshow container */
+.slideshow-container {  
+  top: 210px;
+  max-width: 100%;
+  height: 500px;
+  position: relative;
+  padding: 0;
+  margin: 0 0px;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #444444;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text-on-gallery {
+  background-color: rgba(90, 190, 236, 0.7);
+  padding: 8px 12px;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+  height: 30%;
+  margin-left: 55%;
+  text-align: center;
+}
+
+.changing-gallery-text-big {
+    margin-top: 2%;
+    color: white;
+    opacity: 1;
+    font-size: 3em;
+}
+
+.changing-gallery-text-small {
+    margin-top: 2%;
+    color: white;
+    opacity: 1;
+    font-size: 1.5em;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.toggle-dropdown-menu {
+  display: none;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 1600px){ 
+  .h1-welcome {
+    padding-top: 0%;
+    margin-top: 9%;
+  }
+
+  .text-on-gallery {
+    top: 40%;
+  }
+
+}
+
+@media only screen and (max-width: 1400px){ 
+  .nav-bar {
+    padding: 0;
+    width: 100%;
+  }
+
+  .h1-welcome {
+    padding-top: 0%;
+    margin-top: 4%;
+  }
+
+  .text-on-gallery {
+    top: 20%;
+  }
+
+}
+
+@media only screen and (max-width: 1175px){ 
+  .nav-link {
+   
+    font-size: 1.1em;
+    padding: 5px 5px;
+    color: black;
+    border: rgb(92, 183, 240);
+    border-color: rgb(138, 199, 236);
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 20px;
+    margin: 0px 5px;
+}
+
+  .nav-bar {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 640px){
+
+  #course-of-action, #section-2, #reservation-form, #section-3, #contacts, #top-of-the-page {
+    display: block;
+    position: relative;
+    top: -130px;
+}
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .toggle-dropdown-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    display: block;
+    padding: 0 0 3% 0;
+    margin: 0 0 0 0;
+  }
+
+  .languages-container {
+    margin-left: 3%;
+    margin-top: 3%;
+    vertical-align: top;
+  }
+
+  .language-icon-button {
+  display: block;
+  width: 60px;
+  height: 40px;
+  border: none;
+  margin-bottom: 5px;
+  
+  }
+
+  .language-icon {
+    width: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .logo {
+    margin: 0 0 0 45%;
+    height: 120px;
+    width: 120px;
+  }
+
+  .dropdown-menu {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 25%;
+    padding: 0;
+    top: 0;
+  }
+
+  nav div a  {
+    display: inline-block;
+  }
+
+  .nav-link {
+    font-size: 1em;
+  }
+
+  .navigation-item {
+    margin: 0 10% 15px 10%;
+    width: 80%;
+    padding: 0;
+    
+    text-align: center;
+  }
+
+  
+  
+  .h1-welcome {
+    padding-left: 5%;
+    margin-left: 0;
+    margin-top: 40%;
+    padding-top: 0;
+  }
+
+  .main-section {
+    padding: 0 0 0 0;
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+    padding-top: 1%;
+    display: block;
+    text-align: center;
+  }
+ 
+  #img-logo-big {
+    margin: 0 0 0 0;
+    padding-top: 0;
+    width: 90%;
+  }
+
+  .h1-go-float {
+    padding: 0 0 0 12%;
+    width: 100%;
+  }
+
+  .section-2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .calendar-section {
+    width: 100%;
+  }
+
+  .div-section {
+    padding: 0 5% 0 5%;
+    width: 90%;
+    text-align: center;
+  }
+  
+  p {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .gform {
+    text-align: left;
+    padding-left: 5%;
+    font-size: 0.7em;
+  }
+
+  .label {
+    width: 100%;
+  }
+
+  #meno-priezvisko, #e-mail-klienta, #telefonne-cislo {
+    width: 80%;
+  }
+
+  #pocet-ludi, #pocet-kanoe, #pocet-paddleboardov, #datum-splavu, #zaciatok-splavu, #mesiac {
+    width: 30%;
+  }
+
+}
