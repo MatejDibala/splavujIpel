@@ -171,6 +171,7 @@
 			<div>
 				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="cennik_nadpis"></h1></div>
 				<!--<h2 class="h2-light" data-language-key="zakladny_cennik"></h2>-->
+				<h2 class="h2-light" data-language-key="cennik_trvanie"></h2>
 				<h2 class="h2-light" data-language-key="splav_vikend"></h2>
 				<h2 class="h2-light" data-language-key="splav_tyzden"></h2>
 				<h2 class="h2-light" data-language-key="splav_deti"></h2>
@@ -185,7 +186,7 @@
 				-->
 				<h2 class="h2-light" data-language-key="poznamka_k_cenniku"></h2>
 				<ul>
-					<li data-language-key="poznamka_k_cenniku_1"></li>
+					<!--<li data-language-key="poznamka_k_cenniku_1"></li> -->
 					<li data-language-key="poznamka_k_cenniku_2"></li>
 					<li data-language-key="poznamka_k_cenniku_3"></li>
 					<li data-language-key="poznamka_k_cenniku_4"></li>
@@ -239,9 +240,28 @@
 				</select>
 				<br>
 				<div class="label">
-					<label for="pocet-kanoe" data-language-key="pocet_kanoe"></label>
+					<label for="pocet-kanoe" data-language-key="pocet_kanoe_vydra"></label>
 				</div>
-				<select id="pocet-kanoe" name="pocet-kanoe" >
+				<select id="pocet-kanoe-vydra" name="pocet-kanoe-vydra" >
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<br>
+				<div class="label">
+					<label for="pocet-kanoe" data-language-key="pocet_kanoe_lochness"></label>
+				</div>
+				<select id="pocet-kanoe-lochness" name="pocet-kanoe-lochness" >
 					<option value="0">0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -317,13 +337,13 @@
 				<select id="zaciatok-splavu" name="zaciatok-splavu" >
 					<!-- <option value="8:00">8:00</option>
 					<option value="9:00">9:00</option> -->
-					<option value="10:00">10:00</option>
+					<option value="09:00">09:00</option>
 					<!-- <option value="11:00">11:00</option>
 					<option value="12:00">12:00</option> -->
-					<option value="13:00">13:00</option>
+					<option value="14:30">14:30</option>
 					<!-- <option value="14:00">14:00</option> 
 					<option value="15:00">15:00</option> -->
-					<option value="16:00">16:00</option>
+					<!--<option value="16:00">16:00</option> -->
 					<!-- <option value="17:00">17:00</option>
 					<option value="18:00">18:00</option> -->
 				</select>
