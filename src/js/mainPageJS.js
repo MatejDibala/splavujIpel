@@ -82,9 +82,10 @@ languages = {
     slideshow_small_text_3: 'Najvyšší čas vyraziť na vodu!',
     welcome_sign: 'Sezóna splavu je v plnom prúde!',
     ako_to_funguje_nadpis: 'Ako to funguje:',
-    krok_1: 'Vyberte si, či by ste chceli ísť na dvojmiestnom kanoe vydra alebo trojmiestnom kanoe lochness. (max. váha osôb na 1 kanoe je 200 kg.',
+    krok_0: 'Vyberte si zážitok: 1) splav Ipľa (trvanie cca 3 hodiny), 2) kanoe pre začiatočníkov - kľudná voda na Kalonde',
+    krok_1: 'Vyberte si, či by ste chceli ísť na dvojmiestnom kanoe vydra alebo trojmiestnom kanoe lochness (odporúčanie je 2 dospelí + dieťa)',
     krok_2: 'Zistite, kto s vami pôjde (počet ľudí).',
-    krok_3: 'Rozhodnite sa pre dátum a čas a skontrolujte ',
+    krok_3: 'Rozhodnite sa pre dátum a skontrolujte ',
     dostupnost_2: 'dostupnosť.',
     krok_4: 'Odošlite ',
     rezervacny_formular: 'rezervačný formulár.',
@@ -92,11 +93,11 @@ languages = {
     zakladny_cennik: 'Základný cenník:',
     cennik_nadpis: 'Cenník požičovne',
     cennik_trvanie: 'Obvyklá dĺžka splavu: 3 hodiny',
-    splav_vikend: 'Splav Víkend (Pia,So,Ne): Dospelá osoba s kompletným vybavením: 15,-€/hod',
-    splav_tyzden: 'Splav (Ut,St,Št): Dospelá osoba s kompletným vybavením: 12,-€/hod',
-    splav_deti: 'Deti do 15 rokov s kompletným vybavením: 10€,-/hod',
-    splav_kanoe: 'Kanoe na Kalonde: Prenájom kanoe na vodnom diele Kalonda pre začiatočníkov: 10,-€/hod',
-    cennik_paddleboard: 'Paddleboard: Prenájom paddleboardu na VD Kalonda: 5,-€/hod',
+    splav_vikend: 'Splav Víkend (Pia,So,Ne): Dospelá osoba s kompletným vybavením: 15,-€/osoba',
+    splav_tyzden: 'Splav (Ut,St,Št): Dospelá osoba s kompletným vybavením: 12,-€/osoba',
+    splav_deti: 'Deti do 15 rokov s kompletným vybavením: 10€,-/osoba',
+    splav_kanoe: 'Kanoe na Kalonde: Prenájom kanoe na vodnom diele Kalonda pre začiatočníkov: 10,-€/hodina',
+    cennik_paddleboard: 'Paddleboard: Prenájom paddleboardu na VD Kalonda: 5,-€/hodina',
     //uplny_cennik_download: 'Úplný cenník na stiahnutie.',
     cennik_nakladov: 'Cenník nákladov na obstaranie.',
     poznamka_k_cenniku: 'Poznámky:',
@@ -204,7 +205,8 @@ languages = {
     slideshow_small_text_3: 'High time to float out!',
     welcome_sign: 'Paddling season is underway!',
     ako_to_funguje_nadpis: 'How it works:',
-    krok_1: 'Choose whether you want to borrow a 2 person kanoe "otter" or a 3 person kanoe "lochness". (max weight of people per 1 kanoe is 200 kg)e',
+    krok_0: 'Choose your experience: 1) paddle Ipeľ (duration cca 3 hours), 2) kanoe for beginners - still water on Kalonda',
+    krok_1: 'Choose whether you want to borrow a 2 person kanoe "otter" or a 3 person kanoe "lochness" (recommendation: 2 adults and 1 child)',
     krok_2: 'Find out who is coming with you (number of people).',
     krok_3: 'Choose the date and check the ',
     dostupnost_2: 'availability.',
@@ -214,9 +216,9 @@ languages = {
     zakladny_cennik: 'Basic price list:',
     cennik_nadpis: 'Rental price list',
     cennik_trvanie: 'Usual duration of paddlign: 3 hours',
-    splav_vikend: 'Weekend (Fri, Sat, Sun): Adult with complete gear: 15,-€/hour',
-    splav_tyzden: 'Business day (Tue, Wed, Thu): Adult with complete gear: 12,-€/hour',
-    splav_deti: 'Children up to 15 years old with complete gear: 10€,-/hour',
+    splav_vikend: 'Weekend (Fri, Sat, Sun): Adult with complete gear: 15,-€/person',
+    splav_tyzden: 'Business day (Tue, Wed, Thu): Adult with complete gear: 12,-€/person',
+    splav_deti: 'Children up to 15 years old with complete gear: 10€,-/person',
     splav_kanoe: 'Kalonda Canoe: Canoe rental on hydraulic structure Kalonda for beginners: 10,-€/hour',
     cennik_paddleboard: 'Paddleboard: Paddleboard on hydraulic structure Kalonda: 5,-€/hour',
     //uplny_cennik_download: 'Úplný cenník na stiahnutie.',
@@ -313,19 +315,19 @@ let language = '';
 
 if (/^sk\b/.test(navigator.language)) {       
   language= 'sk'; 
-  document.getElementById("submit-button").value = "Odoslať";
+  //document.getElementById("submit-button").value = "Odoslať";
 } else if (/^cs\b/.test(navigator.language)) {       
   language= 'sk'; 
-  document.getElementById("submit-button").value = "Odoslať";
+  //document.getElementById("submit-button").value = "Odoslať";
 } else if (/^hu\b/.test(navigator.language)) {       
   language= 'en'; 
-  document.getElementById("submit-button").value = "Send";
+  //document.getElementById("submit-button").value = "Send";
 } else if (/^de\b/.test(navigator.language)) {       
   language= 'en'; 
-  document.getElementById("submit-button").value = "Send";
+  //document.getElementById("submit-button").value = "Send";
 } else  {       
   language= 'en'; 
-  document.getElementById("submit-button").value = "Send";
+ // document.getElementById("submit-button").value = "Send";
 }
  // tady podle toho co si vybere v tom prepinaci
 
@@ -334,9 +336,9 @@ console.log(navigator.language);
 function setLanguage(languageChosen) {
 
   if (languageChosen == 'sk') {
-    document.getElementById("submit-button").value = "Odoslať";
+    //document.getElementById("submit-button").value = "Odoslať";
   } else {
-    document.getElementById("submit-button").value = "Send";
+   // document.getElementById("submit-button").value = "Send";
   }
 
   language = languages[languageChosen];
@@ -345,6 +347,7 @@ function setLanguage(languageChosen) {
     element.textContent = language[translationKey];
   }
 }
+
 
 setLanguage(language);
 
@@ -363,7 +366,8 @@ function onFormSubmit(){
   const o ={
   MenoPriezvisko : document.getElementById('meno-priezvisko').value,
   pocetLudi:document.getElementById('pocet-ludi').value,
-  pocetKanoe:document.getElementById('pocet-kanoe').value,
+  pocetKanoeVydra:document.getElementById('pocet-kanoe-vydra').value,
+  pocetKanoeLochness:document.getElementById('pocet-kanoe-lochness').value,
   pocetPaddleboardov:document.getElementById('pocet-paddleboardov').value,
   datum:document.getElementById('datum-splavu').value,
   mesiac:document.getElementById('mesiac').value,
@@ -380,7 +384,7 @@ function onFormSubmit(){
     formIsInvalidReason[numberOfInvalidFields] = '';
   } 
   
-  if (o.pocetKanoe == 0 && o.pocetPaddleboardov == 0) {
+  if (o.pocetKanoeVydra == 0 && o.pocetPaddleboardov == 0 && o.pocetKanoeLochness == 0) {
     //Je potrebné rezervovať si aspoň jedno kanoe alebo paddleboard.
     formIsInvalidReason[numberOfInvalidFields] = 'second_reason';
     numberOfInvalidFields += 1;
@@ -410,7 +414,7 @@ function onFormSubmit(){
         //  document.getElementById("demo").innerHTML = this.responseText;
         //}
       };
-    xhttp.open("POST", "https://script.google.com/macros/s/AKfycbz3YTgnfCiAmqexj787aa9cbvR1bbpPrnhDdULy9Q/exec", true);
+    xhttp.open("GET", "https://script.google.com/macros/s/AKfycbwo-ljhA4diYHED7VnIaCyuVQ9DjZrJp5sPoZXzq89j0qUpm43h/exec", true);
     xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhttp.send(params);
       

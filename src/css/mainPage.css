@@ -185,10 +185,6 @@ background-color: black;
   padding: 13% 0 0 25.5%;    
 }
 
-/*
-
-*/
-
 #img-logo-big {
     margin: 0 0 3% 28%;
     padding-bottom: 12.5%;
@@ -198,6 +194,12 @@ background-color: black;
 .light-theme-section {
     margin-top: 0;
     position: relative;
+}
+
+.youtube-video {
+  margin-left: 20%;
+  width: 900px;
+  height: 500px;
 }
 
 .section-2 {
@@ -227,6 +229,10 @@ background-color: black;
   filter: invert(100%);
   color: white;
   padding-left: 10px;
+}
+
+.small-icon {
+  width: 20px;
 }
 
 .inline-h2 {
@@ -320,6 +326,9 @@ input[type=text], input[type=email], input[type=number] {
     font-weight: bold;
   }
   
+  .map {
+    margin-left: 20px;
+  }
 
 /* Slideshow container */
 .slideshow-container {  
@@ -495,9 +504,9 @@ input[type=text], input[type=email], input[type=number] {
     top: -130px;
 }
 
-  .slideshow-container {
+  /*.slideshow-container {
     display: none;
-  }
+  }*/
 
   .toggle-dropdown-menu {
     display: none;
@@ -562,9 +571,9 @@ input[type=text], input[type=email], input[type=number] {
   
   
   .h1-welcome {
-    padding-left: 5%;
+    padding-left: 15%;
     margin-left: 0;
-    margin-top: 40%;
+    margin-top: 60%;
     padding-top: 0;
   }
 
@@ -589,6 +598,11 @@ input[type=text], input[type=email], input[type=number] {
   .h1-go-float {
     padding: 0 0 0 12%;
     width: 100%;
+  }
+
+  .youtube-video {
+    margin-left: 0;
+    width: 400px;
   }
 
   .section-2 {
@@ -630,5 +644,105 @@ input[type=text], input[type=email], input[type=number] {
   #pocet-ludi, #pocet-kanoe, #pocet-paddleboardov, #datum-splavu, #zaciatok-splavu, #mesiac {
     width: 30%;
   }
+  /* Slideshow container */
+.slideshow-container {  
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: max-content;
+  margin-left: -600px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #444444;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text-on-gallery {
+  top: 60%;
+  display: inline-block;
+  position: absolute;
+  left: 1%;
+  height: auto;
+}
+
+.changing-gallery-text-big {
+    margin-top: 2%;
+    color: white;
+    opacity: 1;
+    font-size: 1.5em;
+}
+
+.changing-gallery-text-small {
+    margin-top: 2%;
+    color: white;
+    opacity: 1;
+    font-size: 1em;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.toggle-dropdown-menu {
+  display: none;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 
 }

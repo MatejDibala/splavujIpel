@@ -84,7 +84,7 @@
 		<!-- Full-width images with number and caption text -->
 		<div class="mySlides fade">
 		<div class="numbertext">1 / 3</div>
-		<img src="src/img/gallery01.JPG" style="width:100%">
+		<img class="gallery-images" src="src/img/gallery01.JPG" style="width:100%">
 		<div class="text-on-gallery">
 			<div class="changing-gallery-text-big" data-language-key="slideshow_big_text_1"></div>
 			<div class="changing-gallery-text-small" data-language-key="slideshow_small_text_1"></div>
@@ -93,7 +93,7 @@
 	
 		<div class="mySlides fade">
 		<div class="numbertext">2 / 3</div>
-		<img src="src/img/gallery02.JPG" style="width:100%">
+		<img  class="gallery-images" src="src/img/gallery02.JPG" style="width:100%">
 		<div class="text-on-gallery">
 			<div class="changing-gallery-text-big" data-language-key="slideshow_big_text_2"></div>
 			<div class="changing-gallery-text-small" data-language-key="slideshow_small_text_2"></div>
@@ -102,7 +102,7 @@
 	
 		<div class="mySlides fade">
 		<div class="numbertext">3 / 3</div>
-		<img src="src/img/gallery03.JPG" style="width:100%">
+		<img  class="gallery-images" src="src/img/gallery03.JPG" style="width:100%">
 		<div class="text-on-gallery">
 			<div class="changing-gallery-text-big" data-language-key="slideshow_big_text_3"></div>
 			<div class="changing-gallery-text-small" data-language-key="slideshow_small_text_3"></div>
@@ -133,15 +133,16 @@
 				<div class="column">
 					<h1 class="h1-light" data-language-key="ako_to_funguje_nadpis"></h1>
 					<ol>
+						<li class="how-to-do-it" data-language-key="krok_0"></li>
 						<li class="how-to-do-it" data-language-key="krok_1"></li>
 						<li class="how-to-do-it" data-language-key="krok_2"></li>
 						<li class="how-to-do-it">
-							<div  class=" in-one-row" data-language-key="krok_3"></div>
-							<a class=" dark-theme-section dark-to-light"  href="#section-2" data-language-key="dostupnost_2"></a>
+							<span  class="in-one-row" data-language-key="krok_3"></span>
+							<a class="in-one-row dark-theme-section dark-to-light"  href="#section-2" data-language-key="dostupnost_2"></a>
 						</li>
 						<li class="how-to-do-it">
 							<span class="in-one-row" data-language-key="krok_4"></span>
-							<a class=" dark-theme-section dark-to-light" href="#reservation-form" data-language-key="rezervacny_formular"></a>
+							<a class="dark-theme-section dark-to-light" href="#reservation-form" data-language-key="rezervacny_formular"></a>
 						</li>
 					</ol>
 				</div>
@@ -156,6 +157,7 @@
 				</div>			
 			</div>
 		</div>
+		<iframe class="youtube-video" src="https://www.youtube.com/embed/pHz1C59XS74" title="Splavuj Ipeľ - video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</section>
 	<section class="light-theme-section section-2" >
 		<div id="section-2"></div>
@@ -163,7 +165,6 @@
 		<div class="calendar-section">
 			<iframe class="calendar-section" src="https://calendar.google.com/calendar/embed?src=splavujipel%40gmail.com&ctz=Europe%2FPrague" style="border: 0" frameborder="0" scrolling="no"></iframe>
 		</div>
-		
 	</section>
 	<section>
 		<div id="section-3"></div>
@@ -198,7 +199,7 @@
 				<div class="small-padding" style="display: inline-block;">
 					<a target="_blank" href="/src/files/cennik_obstaravania.pdf">
 						<h2 class="dark-theme-section dark-to-light inline-h2" data-language-key="cennik_nakladov"></h2>
-						<img class="white-icon" src="/src/img/icon_download.svg">
+						<img class="white-icon small-icon" src="/src/img/icon_download.svg">
 					</a>
 					
 				</div>
@@ -212,7 +213,8 @@
 	<section class="light-theme-section section-2" >
 		<div id="reservation-form"></div>
 		<div >
-			<div class="small-padding">&nbsp;<h1 class="h1-dark-theme small-padding" data-language-key="rezervacia"></h1></div>			
+			<div class="small-padding">&nbsp;<h1 class="h1-dark-theme small-padding" data-language-key="rezervacia"></h1></div>	
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciGxQhc33tGstGN8ZAkPHoF5lc-tE4jYd87ETifUr5qlT08w/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>			<!--
 			<form class="gform" id="gform" data-email="splavujipel@gmail.com"
 			onsubmit="onFormSubmit();return false">
 				<div class="label">
@@ -237,10 +239,38 @@
 					<option value="12">12</option>
 					<option value="13">13</option>
 					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+					<option value="32">32</option>
+					<option value="33">33</option>
+					<option value="34">34</option>
+					<option value="35">35</option>
+					<option value="36">36</option>
+					<option value="37">37</option>
+					<option value="38">38</option>
+					<option value="39">39</option>
+					<option value="40">40</option>
+					<option value="41">41</option>
+					<option value="42">42</option>
 				</select>
 				<br>
 				<div class="label">
-					<label for="pocet-kanoe" data-language-key="pocet_kanoe_vydra"></label>
+					<label for="pocet-kanoe-vydra" data-language-key="pocet_kanoe_vydra"></label>
 				</div>
 				<select id="pocet-kanoe-vydra" name="pocet-kanoe-vydra" >
 					<option value="0">0</option>
@@ -259,7 +289,7 @@
 				</select>
 				<br>
 				<div class="label">
-					<label for="pocet-kanoe" data-language-key="pocet_kanoe_lochness"></label>
+					<label for="pocet-kanoe-lochness" data-language-key="pocet_kanoe_lochness"></label>
 				</div>
 				<select id="pocet-kanoe-lochness" name="pocet-kanoe-lochness" >
 					<option value="0">0</option>
@@ -335,17 +365,8 @@
 					<label for="zaciatok-splavu" data-language-key="zaciatok_splavu"></label>
 				</div>
 				<select id="zaciatok-splavu" name="zaciatok-splavu" >
-					<!-- <option value="8:00">8:00</option>
-					<option value="9:00">9:00</option> -->
-					<option value="09:00">09:00</option>
-					<!-- <option value="11:00">11:00</option>
-					<option value="12:00">12:00</option> -->
-					<option value="14:30">14:30</option>
-					<!-- <option value="14:00">14:00</option> 
-					<option value="15:00">15:00</option> -->
-					<!--<option value="16:00">16:00</option> -->
-					<!-- <option value="17:00">17:00</option>
-					<option value="18:00">18:00</option> -->
+					<option value="09:00">09:00</option>					
+					<option value="14:30">14:30</option>				
 				</select>
 				<br>
 				<div class="label">
@@ -360,18 +381,19 @@
 				<br>
 			    <input type="submit" value="Send" id="submit-button">
 			</form>
+		
 			<div id="form-response-message">
 				
-			</div>
-			<div id="information"></div>
+			</div>-->
+			<!--<div id="information"></div> -->
 			<br>
 			<br>
 			<br>
-			<div class="like-h2">
+			<!--<<div class="like-h2">
 				<h2 class="like-h2 h2-dark in-one-row" data-language-key="expresna_rezervacia"></h2>
-				<a class="like-h2 h2-dark light-to-dark in-one-row" href="#contacts" data-language-key="kontakty_2"></a>
-			</div>
-		</div>
+				a class="like-h2 h2-dark light-to-dark in-one-row" href="#contacts" data-language-key="kontakty_2"></a
+			</div>>-->
+		</div> 
 	</section>
 	<section>
 		<div ></div>
@@ -433,7 +455,7 @@
 	</section>
 	<section>
 		<div id="contacts"></div>
-		<div class="light-theme-section section-2" >
+		<div class="light-theme-section section-2 in-one-row" >
 			<div>
 				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="kontakty"></h1></div>
 				<h2 class="h2-light" data-language-key="pozicovna_sportoveho_naradia"></h2>
@@ -442,6 +464,14 @@
 				<h2 class="h2-light" >+421 907 667 287</h2>
 				<h2 class="h2-light" >splavujipel@gmail.com</h2>
 			</div>
+		</div>
+		<div class="map in-one-row ">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.9911415356787!2d19.64525016822315!3d48.26325548765582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740078ec4e04b71%3A0x7914704cef9fd841!2sSplavuj%20Ipe%C4%BE%20Kalonda!5e0!3m2!1scs!2ssk!4v1626193063125!5m2!1scs!2ssk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div class="map in-one-row ">
+			<a href="http://www.aquaparknovolandia.sk" target="_blank">
+				<img src="src/img/novolandia.jpeg" />
+			</a>
 		</div>
 	</section>
 	<script src="src/js/mainPageJS.js"></script>
