@@ -327,7 +327,9 @@ input[type=text], input[type=email], input[type=number] {
   }
   
   .map {
-    margin-left: 20px;
+    margin-left: 10px;
+    width: 400px;
+    height: 300px;
   }
 
 /* Slideshow container */
