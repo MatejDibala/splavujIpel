@@ -17,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-p {
+.paragraph {
     width: 60%;
     padding-bottom: 30px;
 }
@@ -624,10 +624,12 @@ input[type=text], input[type=email], input[type=number] {
     text-align: center;
   }
   
-  p {
+  
+  .paragraph {
     text-align: justify;
     width: 100%;
   }
+  
 
   .gform {
     text-align: left;
