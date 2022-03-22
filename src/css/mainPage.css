@@ -13,6 +13,10 @@ html, body {
   display: inline-block;
 }
 
+.next-row {
+  margin-left: 83%;
+}
+
 a {   
     text-decoration: none;
 }
@@ -474,6 +478,10 @@ input[type=text], input[type=email], input[type=number] {
 
   .text-on-gallery {
     top: 20%;
+  }
+
+  .next-row {
+    margin: 0;
   }
 
 }
