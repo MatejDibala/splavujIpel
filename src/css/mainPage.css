@@ -9,10 +9,6 @@ html, body {
     color: black
 }
 
-.in-one-row {
-  display: inline-block;
-}
-
 .next-row {
   margin-left: 83%;
 }
@@ -33,13 +29,17 @@ a {
     
     top: 0;
     width: 100%;
+    height: 30vh;
     padding-left: 12%;
     padding-right: 1%;
+    padding-bottom: 100px;
     z-index: 10;
     margin: 0;
+    max-height: 10%;
+    display: flex;
 }
 
-.languages-container {
+.display-inline-block {
   display: inline-block;
 }
 
@@ -49,6 +49,7 @@ a {
   height: 45px;
   border: none;
   margin-bottom: 10px;
+  background-color: white;
   
 }
 
@@ -66,13 +67,20 @@ a {
     vertical-align: middle;
 }
 
-.navigation-item {
-  display: inline-block;
+.navigation-icons {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 25%;
+  background-color: white;
+  z-index: 8;
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    z-index: 9;
 }
 
 nav div ul li {
@@ -145,8 +153,8 @@ section {
 }
 
 .main-section {
-    width: 80%;
-    padding: 0 0 0 20%;
+    width: 100%;
+    padding: 0 10% 0 12%;
     z-index: inherit;
     
 }
@@ -207,8 +215,7 @@ background-color: black;
 }
 
 .section-2 {
-    padding-left: 20%;
-    
+    padding-left: 12%;
     padding-bottom: 2%;
 }
 
@@ -250,6 +257,11 @@ background-color: black;
     width: 30%;
     font-size: 2em;
     padding: 1% 0;
+}
+
+.centered-text {
+  wdith: 100%;
+  padding-right: 40%;
 }
 
 input[type=text], input[type=email], input[type=number] {
@@ -467,7 +479,9 @@ input[type=text], input[type=email], input[type=number] {
 
 @media only screen and (max-width: 1400px){ 
   .nav-bar {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 100px;
     width: 100%;
   }
 

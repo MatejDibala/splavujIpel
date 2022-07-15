@@ -22,10 +22,11 @@
 
 </head>
 <body>
-	<div id="top-of-the-page" ></div>
+	<div id="top-of-the-page" >
+	</div>
 	<nav>
 		<div class="nav-bar">
-			<div class="languages-container">
+			<div class="display-inline-block">
 				<button class="language-icon-button" onclick='setLanguage("sk")'>
 					<img alt="Use Slovak language" title="Slovensky" class="language-icon" src="src/img/sk_flag.png">
 				</button>
@@ -34,45 +35,48 @@
 				</button>
 			</div>
 			
-			<a href="#top-of-the-page" >
-				<img title="Splavuj Ipeľ logo" alt="Splavuj Ipeľ logo" class="logo centered" src="src/img/logo_splavuj_ipel.png"  >
-			</a>
+			<div class="display-inline-block">
+				<a href="#top-of-the-page">
+					<img title="Splavuj Ipeľ logo" alt="Splavuj Ipeľ logo" class="logo centered" src="src/img/logo_splavuj_ipel.png"  >
+				</a>
+			</div>
 			
-			<img alt="dropdown menu" class="dropdown-menu centered" src="src/img/menu-icon.png" onclick="showUlDropdown()">
-			<div class="navigation-item">
-				<div class="toggle-dropdown-menu" id="ul-dropdown-menu">
-				
-					<ul class="navigation-item centered" >
-						<li class="navigation-item">
-							<a class="nav-link" href="#course-of-action" onclick="showUlDropdown()" data-language-key="ako_to_funguje"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#section-2" onclick="showUlDropdown()" data-language-key="dostupnost"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#section-3" onclick="showUlDropdown()" data-language-key="cennik"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#reservation-form" onclick="showUlDropdown()" data-language-key="rezervacia"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#information" onclick="showUlDropdown()" data-language-key="information_button"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#contacts" onclick="showUlDropdown()" data-language-key="kontakty"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-icon" href="https://www.facebook.com/Splavujipel" onclick="showUlDropdown()" target="_blank">
-								<img title="Splavuj Ipeľ Facebook" alt="Splavuj Ipeľ Facebook page"  src="/src/img/fb-icon.png">
-							</a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-icon" href="https://www.instagram.com/splavuj_ipel/" onclick="showUlDropdown()" target="_blank">
-								<img title="Splavuj Ipeľ Instagram" alt="Splavuj Ipeľ Instagram page" src="/src/img/ig-icon.png">
-							</a>
-						</li>
-					</ul>
-				</div>
+			<div class="display-inline-block">
+				<img alt="dropdown menu" class="dropdown-menu centered" src="src/img/menu-icon.png" onclick="showUlDropdown()">
+			</div>
+			
+			<div class="toggle-dropdown-menu" id="ul-dropdown-menu">
+			
+				<ul  class="centered display-inline-block">
+					<li class="display-inline-block">
+						<a class="nav-link" href="#course-of-action" onclick="showUlDropdown()" data-language-key="ako_to_funguje"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#section-2" onclick="showUlDropdown()" data-language-key="dostupnost"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#section-3" onclick="showUlDropdown()" data-language-key="cennik"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#reservation-form" onclick="showUlDropdown()" data-language-key="rezervacia"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#information" onclick="showUlDropdown()" data-language-key="information_button"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#contacts" onclick="showUlDropdown()" data-language-key="kontakty"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-icon" href="https://www.facebook.com/Splavujipel" onclick="showUlDropdown()" target="_blank">
+							<img title="Splavuj Ipeľ Facebook" alt="Splavuj Ipeľ Facebook page"  src="/src/img/fb-icon.png">
+						</a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-icon" href="https://www.instagram.com/splavuj_ipel/" onclick="showUlDropdown()" target="_blank">
+							<img title="Splavuj Ipeľ Instagram" alt="Splavuj Ipeľ Instagram page" src="/src/img/ig-icon.png">
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -137,11 +141,11 @@
 						<li class="how-to-do-it" data-language-key="krok_1"></li>
 						<li class="how-to-do-it" data-language-key="krok_2"></li>
 						<li class="how-to-do-it">
-							<span  class="in-one-row" data-language-key="krok_3"></span>
-							<a class="in-one-row dark-theme-section dark-to-light"  href="#section-2" data-language-key="dostupnost_2"></a>
+							<span  class="display-inline-block" data-language-key="krok_3"></span>
+							<a class="display-inline-block dark-theme-section dark-to-light"  href="#section-2" data-language-key="dostupnost_2"></a>
 						</li>
 						<li class="how-to-do-it">
-							<span class="in-one-row" data-language-key="krok_4"></span>
+							<span class="display-inline-block" data-language-key="krok_4"></span>
 							<a class="dark-theme-section dark-to-light" href="#reservation-form" data-language-key="rezervacny_formular"></a>
 						</li>
 					</ol>
@@ -180,7 +184,7 @@
 				<h2 class="h2-light" data-language-key="splav_tyzden"></h2>
 
 				<h2 class="h2-light" data-language-key="poznamka_k_cenniku"></h2>
-				<ul>
+				<ul class="centered centered-text">
 					<!--<li data-language-key="poznamka_k_cenniku_1"></li> -->
 					<li data-language-key="poznamka_k_cenniku_2"></li>
 					<li data-language-key="poznamka_k_cenniku_3"></li>
@@ -208,9 +212,9 @@
 		</div> 
 	</section>
 	<section>
-		<div ></div>
-		<div class="dark-theme-section div-section section-2" >
-			<div>
+		<div id="information"></div>
+		<div class="dark-theme-section div-section section-2 " >
+			<div class="centered-text">
 				<div class="small-padding">&nbsp;<h2 class="h1-light small-padding" data-language-key="informacie_faq"></h2></div>
 				<h2 class="h2-light" data-language-key="priprava_nadpis"></h2>
 				<ol>
@@ -267,7 +271,7 @@
 	</section>
 	<section>
 		<div id="contacts"></div>
-		<div class="light-theme-section section-2 in-one-row" >
+		<div class="light-theme-section section-2 display-inline-block" >
 			<div>
 				<div class="small-padding">&nbsp;<h2 class="h1-light small-padding" data-language-key="kontakty"></h2></div>
 				<h2 class="h2-light" data-language-key="pozicovna_sportoveho_naradia"></h2>
@@ -277,15 +281,15 @@
 				<h2 class="h2-light" >splavujipel@gmail.com</h2>
 			</div>
 		</div>
-		<div class="in-one-row">
+		<div class="display-inline-block">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.9911415356787!2d19.64525016822315!3d48.26325548765582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740078ec4e04b71%3A0x7914704cef9fd841!2sSplavuj%20Ipe%C4%BE%20Kalonda!5e0!3m2!1scs!2ssk!4v1626193063125!5m2!1scs!2ssk" margin-left="20" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</div>
-		<div class="in-one-row">
+		<div class="display-inline-block">
 			<a href="http://www.aquaparknovolandia.sk" target="_blank">
 				<img title="Novolandia aquapark" alt="Novolandia aquapark" class="map" src="src/img/novolandia.jpeg" />
 			</a>
 		</div>
-		<div class="in-one-row">
+		<div class="display-inline-block">
 			<div class="next-row">
 				<a  href="https://www.campingmoongarden.com/" target="_blank">
 					<img title="Moongarden camp"  alt="Moongarden camp" class="map" src="src/img/moongarden.jpeg" />
