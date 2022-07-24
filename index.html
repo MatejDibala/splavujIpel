@@ -14,65 +14,72 @@
 	<meta charset="utf-8">
 	<title>Splavuj Ipeľ!</title>
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="description" content="Splav rieky Ipeľ na kanoe a paddleboardoch pre začiatočníkov, pokročilých, rodiny, starých, mladých, zdravých aj hendikepovaných.">
-	<meta name="keywords" content="splav, Ipeľ, kanoe, paddleboard">
+	<meta name="description" content="Vyrazte s nami na vodu a splavte najkrajší horný tok Ipľa na kanoe alebo raftoch. Splavovanie je vhodné aj pre rodiny s deťmi. Užite si leto a splavuj ipeľ.">
+	<meta name="keywords" content="splav, Ipeľ, kanoe, paddleboard, Splavuj Ipeľ, Kalonda">
 	<meta name="robots" content="index,follow"/>
 	<link href="src/css/mainPage.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
 
 </head>
 <body>
-	<div id="top-of-the-page" ></div>
+	<div id="top-of-the-page" >
+	</div>
 	<nav>
 		<div class="nav-bar">
-			<div class="languages-container">
+			<div class="display-inline-block">
 				<button class="language-icon-button" onclick='setLanguage("sk")'>
-					<img class="language-icon" src="src/img/sk_flag.png">
+					<img alt="Use Slovak language" title="Slovensky" class="language-icon" src="src/img/sk_flag.png">
 				</button>
 				<button class="language-icon-button" onclick='setLanguage("en")'>
-					<img class="language-icon" src="src/img/en_flag.png">
+					<img alt="Use English language" title="English" class="language-icon" src="src/img/en_flag.png">
 				</button>
 			</div>
 			
-			<a href="#top-of-the-page" >
-				<img class="logo centered" src="src/img/logo_splavuj_ipel.png"  >
-			</a>
+			<div class="display-inline-block">
+				<a href="#top-of-the-page">
+					<img title="Splavuj Ipeľ logo" alt="Splavuj Ipeľ logo" class="logo centered" src="src/img/logo_splavuj_ipel.png"  >
+				</a>
+			</div>
 			
-			<img class="dropdown-menu centered" src="src/img/menu-icon.png" onclick="showUlDropdown()">
-			<div class="navigation-item">
-				<div class="toggle-dropdown-menu" id="ul-dropdown-menu">
-				
-					<ul class="navigation-item centered" >
-						<li class="navigation-item">
-							<a class="nav-link" href="#course-of-action" onclick="showUlDropdown()" data-language-key="ako_to_funguje"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#section-2" onclick="showUlDropdown()" data-language-key="dostupnost"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#section-3" onclick="showUlDropdown()" data-language-key="cennik"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#reservation-form" onclick="showUlDropdown()" data-language-key="rezervacia"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#information" onclick="showUlDropdown()" data-language-key="information_button"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-link" href="#contacts" onclick="showUlDropdown()" data-language-key="kontakty"></a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-icon" href="https://www.facebook.com/Splavujipel" onclick="showUlDropdown()" target="_blank">
-								<img  src="/src/img/fb-icon.png">
-							</a>
-						</li>
-						<li class="navigation-item">
-							<a class="nav-icon" href="https://www.instagram.com/splavuj_ipel/" onclick="showUlDropdown()" target="_blank">
-								<img src="/src/img/ig-icon.png">
-							</a>
-						</li>
-					</ul>
-				</div>
+			<div class="display-inline-block">
+				<img alt="dropdown menu" class="dropdown-menu centered" src="src/img/menu-icon.png" onclick="showUlDropdown()">
+			</div>
+			
+			<div class="toggle-dropdown-menu" id="ul-dropdown-menu">
+			
+				<ul  class="centered display-inline-block">
+					<li class="display-inline-block">
+						<a class="nav-link" href="#course-of-action" onclick="showUlDropdown()" data-language-key="ako_to_funguje"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#section-2" onclick="showUlDropdown()" data-language-key="dostupnost"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#section-3" onclick="showUlDropdown()" data-language-key="cennik"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#reservation-form" onclick="showUlDropdown()" data-language-key="rezervacia"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#information" onclick="showUlDropdown()" data-language-key="information_button"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="#contacts" onclick="showUlDropdown()" data-language-key="kontakty"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-link" href="ladovo.html" onclick="showUlDropdown()" data-language-key="ladovo"></a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-icon" href="https://www.facebook.com/Splavujipel" onclick="showUlDropdown()" target="_blank">
+							<img title="Splavuj Ipeľ Facebook" alt="Splavuj Ipeľ Facebook page"  src="/src/img/fb-icon.png">
+						</a>
+					</li>
+					<li class="display-inline-block">
+						<a class="nav-icon" href="https://www.instagram.com/splavuj_ipel/" onclick="showUlDropdown()" target="_blank">
+							<img title="Splavuj Ipeľ Instagram" alt="Splavuj Ipeľ Instagram page" src="/src/img/ig-icon.png">
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -84,7 +91,7 @@
 		<!-- Full-width images with number and caption text -->
 		<div class="mySlides fade">
 		<div class="numbertext">1 / 3</div>
-		<img src="src/img/gallery01.JPG" style="width:100%">
+		<img title="Splavuj Ipeľ kanoe" alt="People in canoes - turn" class="gallery-images" src="src/img/gallery01.JPG" style="width:100%">
 		<div class="text-on-gallery">
 			<div class="changing-gallery-text-big" data-language-key="slideshow_big_text_1"></div>
 			<div class="changing-gallery-text-small" data-language-key="slideshow_small_text_1"></div>
@@ -93,7 +100,7 @@
 	
 		<div class="mySlides fade">
 		<div class="numbertext">2 / 3</div>
-		<img src="src/img/gallery02.JPG" style="width:100%">
+		<img title="Splavuj Ipeľ" alt="People in canoes 2" class="gallery-images" src="src/img/gallery02.JPG" style="width:100%">
 		<div class="text-on-gallery">
 			<div class="changing-gallery-text-big" data-language-key="slideshow_big_text_2"></div>
 			<div class="changing-gallery-text-small" data-language-key="slideshow_small_text_2"></div>
@@ -102,7 +109,7 @@
 	
 		<div class="mySlides fade">
 		<div class="numbertext">3 / 3</div>
-		<img src="src/img/gallery03.JPG" style="width:100%">
+		<img title="Splavuj Ipeľ Kalonda" alt="People in canoes - sunny" class="gallery-images" src="src/img/gallery03.JPG" style="width:100%">
 		<div class="text-on-gallery">
 			<div class="changing-gallery-text-big" data-language-key="slideshow_big_text_3"></div>
 			<div class="changing-gallery-text-small" data-language-key="slideshow_small_text_3"></div>
@@ -131,61 +138,57 @@
 		<div class="dark-theme-section div-section">
 			<div class="main-section">
 				<div class="column">
-					<h1 class="h1-light" data-language-key="ako_to_funguje_nadpis"></h1>
+					<h2 class="h1-light" data-language-key="ako_to_funguje_nadpis"></h2>
 					<ol>
+						<li class="how-to-do-it" data-language-key="krok_0"></li>
 						<li class="how-to-do-it" data-language-key="krok_1"></li>
 						<li class="how-to-do-it" data-language-key="krok_2"></li>
 						<li class="how-to-do-it">
-							<div  class=" in-one-row" data-language-key="krok_3"></div>
-							<a class=" dark-theme-section dark-to-light"  href="#section-2" data-language-key="dostupnost_2"></a>
+							<span  class="display-inline-block" data-language-key="krok_3"></span>
+							<a class="display-inline-block dark-theme-section dark-to-light"  href="#section-2" data-language-key="dostupnost_2"></a>
 						</li>
 						<li class="how-to-do-it">
-							<span class="in-one-row" data-language-key="krok_4"></span>
-							<a class=" dark-theme-section dark-to-light" href="#reservation-form" data-language-key="rezervacny_formular"></a>
+							<span class="display-inline-block" data-language-key="krok_4"></span>
+							<a class="dark-theme-section dark-to-light" href="#reservation-form" data-language-key="rezervacny_formular"></a>
 						</li>
 					</ol>
 				</div>
 				<div class="column">
 					<a href="#reservation-form">
 						<div class="a-go-float"> 
-							<h1 class="h1-light-2 h1-go-float" data-language-key="podme_na_to"></h1>
+							<h2 class="h1-light-2 h1-go-float" data-language-key="podme_na_to"></h2>
 							
-							<img id="img-logo-big"  src="src/img/splavuj_ipel_zlty.png"> 
+							<img title="Splavuj Ipeľ big logo" alt="Splavuj Ipel logo big" id="img-logo-big"  src="src/img/splavuj_ipel_zlty.png"> 
 						</div>
 					</a>
 				</div>			
 			</div>
 		</div>
+		<iframe class="youtube-video" src="https://www.youtube.com/embed/pHz1C59XS74" title="Splavuj Ipeľ - video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</section>
 	<section class="light-theme-section section-2" >
 		<div id="section-2"></div>
-		<div class="small-padding">&nbsp;<h1 class="h1-dark-theme" data-language-key="dostupnost"></h1></div>
+		<div class="small-padding">&nbsp;<h2 class="h1-dark-theme" data-language-key="dostupnost"></h2></div>
 		<div class="calendar-section">
 			<iframe class="calendar-section" src="https://calendar.google.com/calendar/embed?src=splavujipel%40gmail.com&ctz=Europe%2FPrague" style="border: 0" frameborder="0" scrolling="no"></iframe>
 		</div>
-		
 	</section>
 	<section>
 		<div id="section-3"></div>
 		<div class="dark-theme-section div-section main-section" >
 			<div>
-				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="cennik_nadpis"></h1></div>
-				<!--<h2 class="h2-light" data-language-key="zakladny_cennik"></h2>-->
+				<div class="small-padding">&nbsp;<h2 class="h1-light small-padding" data-language-key="cennik_nadpis"></h2></div>
+				<h2 class="h2-light" data-language-key="cennik_trvanie"></h2>
+				<h2 class="h2-light" data-language-key="cennik_trvanie2"></h2>
 				<h2 class="h2-light" data-language-key="splav_vikend"></h2>
-				<h2 class="h2-light" data-language-key="splav_tyzden"></h2>
 				<h2 class="h2-light" data-language-key="splav_deti"></h2>
 				<h2 class="h2-light" data-language-key="splav_kanoe"></h2>
 				<h2 class="h2-light" data-language-key="cennik_paddleboard"></h2>
-				<!--<div class="small-padding" style="display: inline-block;">
-					<a target="_blank" href="/src/files/uplny_cennik.pdf">
-						<h2 class="dark-theme-section dark-to-light inline-h2" data-language-key="uplny_cennik_download"></h2>
-						<img class="white-icon " src="/src/img/icon_download.svg">
-					</a>
-				</div>
-				-->
+				<h2 class="h2-light" data-language-key="splav_tyzden"></h2>
+
 				<h2 class="h2-light" data-language-key="poznamka_k_cenniku"></h2>
-				<ul>
-					<li data-language-key="poznamka_k_cenniku_1"></li>
+				<ul class="centered centered-text">
+					<!--<li data-language-key="poznamka_k_cenniku_1"></li> -->
 					<li data-language-key="poznamka_k_cenniku_2"></li>
 					<li data-language-key="poznamka_k_cenniku_3"></li>
 					<li data-language-key="poznamka_k_cenniku_4"></li>
@@ -193,15 +196,8 @@
 					<li data-language-key="poznamka_k_cenniku_6"></li>
 					<li data-language-key="poznamka_k_cenniku_7"></li>
 				</ul>
-				
-				<div class="small-padding" style="display: inline-block;">
-					<a target="_blank" href="/src/files/cennik_obstaravania.pdf">
-						<h2 class="dark-theme-section dark-to-light inline-h2" data-language-key="cennik_nakladov"></h2>
-						<img class="white-icon" src="/src/img/icon_download.svg">
-					</a>
-					
-				</div>
-				<p data-language-key="disclaimer"></p>
+		
+				<p class="paragraph" data-language-key="disclaimer"></p>
 				
 				
 			</div>
@@ -211,153 +207,18 @@
 	<section class="light-theme-section section-2" >
 		<div id="reservation-form"></div>
 		<div >
-			<div class="small-padding">&nbsp;<h1 class="h1-dark-theme small-padding" data-language-key="rezervacia"></h1></div>			
-			<form class="gform" id="gform" data-email="splavujipel@gmail.com"
-			onsubmit="onFormSubmit();return false">
-				<div class="label">
-					<label  for="meno-priezvisko" data-language-key="meno_priezvisko"></label>
-				</div>
-				<input type="text" id="meno-priezvisko" name="meno-priezvisko" maxlength="50" minlength="7" required><br>
-				<div class="label">
-					<label  for="pocet-ludi" data-language-key="pocet_ludi"></label>
-				</div>
-				<select id="pocet-ludi" name="pocet-ludi" >
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-				</select>
-				<br>
-				<div class="label">
-					<label for="pocet-kanoe" data-language-key="pocet_kanoe"></label>
-				</div>
-				<select id="pocet-kanoe" name="pocet-kanoe" >
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-				</select>
-				<br>
-				<div class="label">
-				  <label for="pocet-paddleboardov" data-language-key="pocet_paddleboardov"></label>
-				</div>
-				<select id="pocet-paddleboardov" name="pocet-paddleboardov" >
-					<option value="0">0</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-				</select>
-				<br>
-				<div class="label">
-					<label for="datum-splavu" data-language-key="datum_splavu"></label>
-				</div>
-				<select id="datum-splavu" name="datum-splavu" >
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
-					<option value="10">10</option>
-					<option value="11">11</option>
-					<option value="12">12</option>
-					<option value="13">13</option>
-					<option value="14">14</option>
-					<option value="15">15</option>
-					<option value="16">16</option>
-					<option value="17">17</option>
-					<option value="18">18</option>
-					<option value="19">19</option>
-					<option value="20">20</option>
-					<option value="21">21</option>
-					<option value="22">22</option>
-					<option value="23">23</option>
-					<option value="24">24</option>
-					<option value="25">25</option>
-					<option value="26">26</option>
-					<option value="27">27</option>
-					<option value="28">28</option>
-					<option value="29">29</option>
-					<option value="30">30</option>
-					<option value="31">31</option>
-				</select>
-					<select id="mesiac" name="mesiac" >
-						<option value="januar" data-language-key="januar"></option>
-						<option value="februar" data-language-key="februar"></option>
-						<option value="marec" data-language-key="marec"></option>
-						<option value="april" data-language-key="april"></option>
-						<option value="maj" data-language-key="maj"></option>
-						<option value="jun" data-language-key="jun"></option>
-						<option value="jul" data-language-key="jul"></option>
-						<option value="august" data-language-key="august"></option>
-						<option value="september" data-language-key="september"></option>
-						<option value="oktober" data-language-key="oktober"></option>
-						<option value="november" data-language-key="november"></option>
-						<option value="december" data-language-key="december"></option>
-						</select>
-				<br>
-				<div class="label">
-					<label for="zaciatok-splavu" data-language-key="zaciatok_splavu"></label>
-				</div>
-				<select id="zaciatok-splavu" name="zaciatok-splavu" >
-					<!-- <option value="8:00">8:00</option>
-					<option value="9:00">9:00</option> -->
-					<option value="10:00">10:00</option>
-					<!-- <option value="11:00">11:00</option>
-					<option value="12:00">12:00</option> -->
-					<option value="13:00">13:00</option>
-					<!-- <option value="14:00">14:00</option> 
-					<option value="15:00">15:00</option> -->
-					<option value="16:00">16:00</option>
-					<!-- <option value="17:00">17:00</option>
-					<option value="18:00">18:00</option> -->
-				</select>
-				<br>
-				<div class="label">
-					<label for="e-mail-klienta" data-language-key="email_rezervacia"></label>
-				</div>
-				<input type="email" id="e-mail-klienta" name="e-mail-klienta" required>
-				<br>
-				<div class="label">
-					<label for="telefonne-cislo" data-language-key="telefonne_cislo"></label>
-				</div>
-				<input type="number" id="telefonne-cislo" name="telefonne-cislo" required><br>
-				<br>
-			    <input type="submit" value="Send" id="submit-button">
-			</form>
-			<div id="form-response-message">
-				
-			</div>
-			<div id="information"></div>
+			<div class="small-padding">&nbsp;<h2 class="h1-dark-theme small-padding" data-language-key="rezervacia"></h2></div>	
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSciGxQhc33tGstGN8ZAkPHoF5lc-tE4jYd87ETifUr5qlT08w/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>						
 			<br>
 			<br>
 			<br>
-			<div class="like-h2">
-				<h2 class="like-h2 h2-dark in-one-row" data-language-key="expresna_rezervacia"></h2>
-				<a class="like-h2 h2-dark light-to-dark in-one-row" href="#contacts" data-language-key="kontakty_2"></a>
-			</div>
-		</div>
+		</div> 
 	</section>
 	<section>
-		<div ></div>
-		<div class="dark-theme-section div-section section-2" >
-			<div>
-				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="informacie_faq"></h1></div>
+		<div id="information"></div>
+		<div class="dark-theme-section div-section section-2 " >
+			<div class="centered-text">
+				<div class="small-padding">&nbsp;<h2 class="h1-light small-padding" data-language-key="informacie_faq"></h2></div>
 				<h2 class="h2-light" data-language-key="priprava_nadpis"></h2>
 				<ol>
 					<li data-language-key="priprava_text_1"></li>
@@ -377,45 +238,45 @@
 				</ol>
 				<h2 class="h2-light" data-language-key="faq"></h2>
 				<h3 data-language-key="question_1"></h3>
-				<div data-language-key="answer_1"></div>
+				<div><p data-language-key="answer_1"></p></div>
 				<h3 class="bold" data-language-key="question_2"></h3>
-				<div data-language-key="answer_2"></div>
+				<div><p data-language-key="answer_2"></p></div>
 				<h3 class="bold" data-language-key="question_3"></h3>
-				<div data-language-key="answer_3"></div>
+				<div><p data-language-key="answer_3"></p></div>
 				<h3 class="bold" data-language-key="question_4"></h3>
-				<div data-language-key="answer_4"></div>
+				<div><p data-language-key="answer_4"></p></div>
 				<h3 class="bold" data-language-key="question_5"></h3>
-				<div data-language-key="answer_5"></div>
+				<div><p data-language-key="answer_5"></p></div>
 				<h3 class="bold" data-language-key="question_6"></h3>
-				<div data-language-key="answer_6"></div>
+				<div><p data-language-key="answer_6"></p></div>
 				<h3 class="bold" data-language-key="question_7"></h3>
-				<div data-language-key="answer_7"></div>
+				<div><p data-language-key="answer_7"></p></div>
 				<h3 class="bold" data-language-key="question_8"></h3>
-				<div data-language-key="answer_8"></div>
+				<div><p data-language-key="answer_8"></p></div>
 				<h3 class="bold" data-language-key="question_9"></h3>
-				<div data-language-key="answer_9"></div>
+				<div><p data-language-key="answer_9"></p></div>
 				<h3 class="bold" data-language-key="question_10"></h3>
-				<div data-language-key="answer_10"></div>
+				<div><p data-language-key="answer_10"></p></div>
 				<h3 class="bold" data-language-key="question_11"></h3>
-				<div data-language-key="answer_11"></div>
+				<div><p data-language-key="answer_11"></p></div>
 				<h3 class="bold" data-language-key="question_12"></h3>
-				<div data-language-key="answer_12"></div>
+				<div><p data-language-key="answer_12"></p></div>
 				<h3 class="bold" data-language-key="question_13"></h3>
-				<div data-language-key="answer_13"></div>
+				<div><p data-language-key="answer_13"></p></div>
 				<h3 class="bold" data-language-key="question_14"></h3>
-				<div data-language-key="answer_14"></div>
+				<div><p data-language-key="answer_14"></p></div>
 				<h3 class="bold" data-language-key="question_15"></h3>
-				<div data-language-key="answer_15"></div>
+				<div><p data-language-key="answer_15"></p></div>
 				<h3 class="bold" data-language-key="question_16"></h3>
-				<div data-language-key="answer_16"></div>
+				<div><p data-language-key="answer_16"></p></div>
 			</div>
 		</div>
 	</section>
 	<section>
 		<div id="contacts"></div>
-		<div class="light-theme-section section-2" >
+		<div class="light-theme-section section-2 display-inline-block" >
 			<div>
-				<div class="small-padding">&nbsp;<h1 class="h1-light small-padding" data-language-key="kontakty"></h1></div>
+				<div class="small-padding">&nbsp;<h2 class="h1-light small-padding" data-language-key="kontakty"></h2></div>
 				<h2 class="h2-light" data-language-key="pozicovna_sportoveho_naradia"></h2>
 				<h2 class="h2-light" >+421 949 811 809</h2>
 				<h2 class="h2-light" >+421 948 429 625</h2>
@@ -423,7 +284,24 @@
 				<h2 class="h2-light" >splavujipel@gmail.com</h2>
 			</div>
 		</div>
+		<div class="display-inline-block">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.9911415356787!2d19.64525016822315!3d48.26325548765582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740078ec4e04b71%3A0x7914704cef9fd841!2sSplavuj%20Ipe%C4%BE%20Kalonda!5e0!3m2!1scs!2ssk!4v1626193063125!5m2!1scs!2ssk" margin-left="20" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div class="display-inline-block">
+			<a href="http://www.aquaparknovolandia.sk" target="_blank">
+				<img title="Novolandia aquapark" alt="Novolandia aquapark" class="map" src="src/img/novolandia.jpeg" />
+			</a>
+		</div>
+		<div class="display-inline-block">
+			<div class="next-row">
+				<a  href="https://www.campingmoongarden.com/" target="_blank">
+					<img title="Moongarden camp"  alt="Moongarden camp" class="map" src="src/img/moongarden.jpeg" />
+				</a>
+			</div>
+		</div>
 	</section>
 	<script src="src/js/mainPageJS.js"></script>
+	<script src="src/js/languageTexts.js"></script>
+
 </body>
 </html>
